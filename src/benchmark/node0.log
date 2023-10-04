@@ -1,0 +1,213 @@
+[2023-10-04 11:18:59,719] [MainProcess] Starting grpc server at 10.32.35.54:9320
+[2023-10-04 11:31:27,533] [MainProcess] Run : builtin_spu_init at node:0
+I1004 11:31:27.608637 1596785 external/com_github_brpc_brpc/src/brpc/server.cpp:1127] Server[yacl::link::transport::internal::ReceiverServiceImpl] is serving on port=9330.
+I1004 11:31:27.609900 1596785 external/com_github_brpc_brpc/src/brpc/server.cpp:1130] Check out http://cl001.hpc.nyu.edu:9330 in web browser.
+[2023-10-04 11:31:29.610] [info] [default_brpc_retry_policy.cc:69] not retry for reached rcp timeout, ErrorCode '1008', error msg '[E1008]Reached timeout=2000ms @10.32.35.55:9331'
+[2023-10-04 11:31:31,611] [MainProcess] spu-runtime (SPU) initialized
+[2023-10-04 11:31:48,936] [MainProcess] Run : <lambda> at node:0
+[2023-10-04 11:31:49,137] [MainProcess] Run : make_shares at node:0
+No GPU/TPU found, falling back to CPU. (Set TF_CPP_MIN_LOG_LEVEL=0 and rerun for more info.)
+[2023-10-04 11:31:49.202] [info] [thread_pool.cc:30] Create a fixed thread pool with size 95
+[2023-10-04 11:31:49,236] [MainProcess] RunR: builtin_fetch_meta at node:0
+[2023-10-04 11:31:54,072] [MainProcess] Run : builtin_spu_run at node:0
+[2023-10-04 11:31:54,082] [MainProcess] RunR: builtin_fetch_object at node:0
+[2023-10-04 11:32:21.209] [info] [api.cc:157] [Profiling] SPU execution infer_cipher completed, input processing took 0.000120048s, execution took 26.415498207s, output processing took 5.815e-06s, total time 26.41562407s.
+[2023-10-04 11:32:21.265] [info] [api.cc:190] HLO profiling: total time 26.363822335000002
+[2023-10-04 11:32:21.265] [info] [api.cc:193] - pphlo.add, executed 547 times, duration 0.416108093s, send bytes 0
+[2023-10-04 11:32:21.265] [info] [api.cc:193] - pphlo.and, executed 47 times, duration 0.000418108s, send bytes 0
+[2023-10-04 11:32:21.265] [info] [api.cc:193] - pphlo.broadcast, executed 198 times, duration 0.001610845s, send bytes 0
+[2023-10-04 11:32:21.265] [info] [api.cc:193] - pphlo.concatenate, executed 149 times, duration 0.023430906s, send bytes 0
+[2023-10-04 11:32:21.265] [info] [api.cc:193] - pphlo.constant, executed 147 times, duration 0.000627929s, send bytes 0
+[2023-10-04 11:32:21.265] [info] [api.cc:193] - pphlo.convert, executed 2 times, duration 0.000177901s, send bytes 0
+[2023-10-04 11:32:21.265] [info] [api.cc:193] - pphlo.convolution, executed 1 times, duration 0.084375113s, send bytes 2684928
+[2023-10-04 11:32:21.265] [info] [api.cc:193] - pphlo.divide, executed 27 times, duration 6.722265657s, send bytes 225128448
+[2023-10-04 11:32:21.265] [info] [api.cc:193] - pphlo.dot, executed 73 times, duration 3.272767222s, send bytes 107844176
+[2023-10-04 11:32:21.265] [info] [api.cc:193] - pphlo.dot_general, executed 24 times, duration 1.252580394s, send bytes 36878400
+[2023-10-04 11:32:21.265] [info] [api.cc:193] - pphlo.dynamic-slice, executed 11 times, duration 0.000212359s, send bytes 0
+[2023-10-04 11:32:21.265] [info] [api.cc:193] - pphlo.dynamic-update-slice, executed 11 times, duration 0.010714966s, send bytes 0
+[2023-10-04 11:32:21.265] [info] [api.cc:193] - pphlo.equal, executed 46 times, duration 0.000454225s, send bytes 0
+[2023-10-04 11:32:21.265] [info] [api.cc:193] - pphlo.exponential, executed 12 times, duration 1.234964385s, send bytes 78169600
+[2023-10-04 11:32:21.265] [info] [api.cc:193] - pphlo.free, executed 3194 times, duration 0.001889284s, send bytes 0
+[2023-10-04 11:32:21.265] [info] [api.cc:193] - pphlo.gather, executed 34 times, duration 0.726170464s, send bytes 0
+[2023-10-04 11:32:21.265] [info] [api.cc:193] - pphlo.greater, executed 26 times, duration 0.059408753s, send bytes 275800
+[2023-10-04 11:32:21.265] [info] [api.cc:193] - pphlo.less, executed 63 times, duration 0.001584641s, send bytes 0
+[2023-10-04 11:32:21.265] [info] [api.cc:193] - pphlo.multiply, executed 225 times, duration 2.442095638s, send bytes 104923144
+[2023-10-04 11:32:21.267] [info] [api.cc:193] - pphlo.not, executed 48 times, duration 0.001044077s, send bytes 0
+[2023-10-04 11:32:21.267] [info] [api.cc:193] - pphlo.pad, executed 204 times, duration 0.000532093s, send bytes 0
+[2023-10-04 11:32:21.267] [info] [api.cc:193] - pphlo.prefer_a, executed 1 times, duration 1.9078e-05s, send bytes 0
+[2023-10-04 11:32:21.267] [info] [api.cc:193] - pphlo.reduce, executed 50 times, duration 1.973064411s, send bytes 31109120
+[2023-10-04 11:32:21.267] [info] [api.cc:193] - pphlo.remainder, executed 31 times, duration 0.011580819s, send bytes 0
+[2023-10-04 11:32:21.267] [info] [api.cc:193] - pphlo.reshape, executed 455 times, duration 0.00181737s, send bytes 0
+[2023-10-04 11:32:21.267] [info] [api.cc:193] - pphlo.rsqrt, executed 25 times, duration 0.201176575s, send bytes 2285200
+[2023-10-04 11:32:21.267] [info] [api.cc:193] - pphlo.select, executed 113 times, duration 0.017004202s, send bytes 118200
+[2023-10-04 11:32:21.267] [info] [api.cc:193] - pphlo.sign, executed 15 times, duration 0.00143498s, send bytes 0
+[2023-10-04 11:32:21.267] [info] [api.cc:193] - pphlo.slice, executed 540 times, duration 0.001420597s, send bytes 0
+[2023-10-04 11:32:21.267] [info] [api.cc:193] - pphlo.subtract, executed 62 times, duration 0.155613383s, send bytes 0
+[2023-10-04 11:32:21.267] [info] [api.cc:193] - pphlo.tanh, executed 11 times, duration 0.180529164s, send bytes 3311616
+[2023-10-04 11:32:21.267] [info] [api.cc:193] - pphlo.transpose, executed 49 times, duration 0.021390462s, send bytes 0
+[2023-10-04 11:32:21.267] [info] [api.cc:193] - pphlo.while, executed 39 times, duration 7.545338241s, send bytes 0
+[2023-10-04 11:32:21.267] [info] [api.cc:190] HAL profiling: total time 19.642683313999996
+[2023-10-04 11:32:21.267] [info] [api.cc:193] - _and, executed 37480 times, duration 0.140901558s, send bytes 0
+[2023-10-04 11:32:21.267] [info] [api.cc:193] - _mux, executed 16402 times, duration 0.747435094s, send bytes 9450936
+[2023-10-04 11:32:21.267] [info] [api.cc:193] - _sign, executed 107 times, duration 0.003421839s, send bytes 0
+[2023-10-04 11:32:21.267] [info] [api.cc:193] - f_add, executed 491 times, duration 0.824957405s, send bytes 0
+[2023-10-04 11:32:21.267] [info] [api.cc:193] - f_div, executed 58 times, duration 6.721418406s, send bytes 225128448
+[2023-10-04 11:32:21.267] [info] [api.cc:193] - f_exp, executed 12 times, duration 1.234787378s, send bytes 78169600
+[2023-10-04 11:32:21.267] [info] [api.cc:193] - f_less, executed 145 times, duration 1.302830761s, send bytes 22052184
+[2023-10-04 11:32:21.267] [info] [api.cc:193] - f_mmul, executed 145 times, duration 4.505113816s, send bytes 144722576
+[2023-10-04 11:32:21.267] [info] [api.cc:193] - f_mul, executed 225 times, duration 2.43768104s, send bytes 104923144
+[2023-10-04 11:32:21.267] [info] [api.cc:193] - f_rsqrt, executed 25 times, duration 0.20097198s, send bytes 2285200
+[2023-10-04 11:32:21.267] [info] [api.cc:193] - f_sub, executed 62 times, duration 0.155247525s, send bytes 0
+[2023-10-04 11:32:21.267] [info] [api.cc:193] - f_tanh, executed 11 times, duration 0.18035467s, send bytes 3311616
+[2023-10-04 11:32:21.267] [info] [api.cc:193] - f_tensordot, executed 1 times, duration 0.081191665s, send bytes 2684928
+[2023-10-04 11:32:21.267] [info] [api.cc:193] - fxp2int, executed 46 times, duration 0.001171142s, send bytes 0
+[2023-10-04 11:32:21.267] [info] [api.cc:193] - i_add, executed 25685 times, duration 0.071475881s, send bytes 0
+[2023-10-04 11:32:21.267] [info] [api.cc:193] - i_equal, executed 61 times, duration 0.000458941s, send bytes 0
+[2023-10-04 11:32:21.267] [info] [api.cc:193] - i_less, executed 48657 times, duration 0.672946802s, send bytes 0
+[2023-10-04 11:32:21.267] [info] [api.cc:193] - i_mul, executed 261 times, duration 0.001633523s, send bytes 0
+[2023-10-04 11:32:21.267] [info] [api.cc:193] - i_sub, executed 77 times, duration 0.001425703s, send bytes 0
+[2023-10-04 11:32:21.267] [info] [api.cc:193] - int2fxp, executed 92 times, duration 0.000490986s, send bytes 0
+[2023-10-04 11:32:21.267] [info] [api.cc:193] - logical_not, executed 32402 times, duration 0.356698771s, send bytes 0
+[2023-10-04 11:32:21.267] [info] [api.cc:193] - seal, executed 2 times, duration 6.8428e-05s, send bytes 0
+[2023-10-04 11:32:21.267] [info] [api.cc:190] MPC profiling: total time 18.851404301
+[2023-10-04 11:32:21.267] [info] [api.cc:193] - a2b, executed 37 times, duration 1.427535275s, send bytes 82320784
+[2023-10-04 11:32:21.267] [info] [api.cc:193] - add_aa, executed 15294 times, duration 1.067981453s, send bytes 0
+[2023-10-04 11:32:21.267] [info] [api.cc:193] - add_ap, executed 7900 times, duration 0.097174754s, send bytes 0
+[2023-10-04 11:32:21.267] [info] [api.cc:193] - add_pp, executed 215809 times, duration 0.328112701s, send bytes 0
+[2023-10-04 11:32:21.267] [info] [api.cc:193] - and_bb, executed 222 times, duration 0.532784279s, send bytes 34828024
+[2023-10-04 11:32:21.267] [info] [api.cc:193] - and_bp, executed 450 times, duration 0.00234813s, send bytes 0
+[2023-10-04 11:32:21.267] [info] [api.cc:193] - and_pp, executed 37480 times, duration 0.10289822s, send bytes 0
+[2023-10-04 11:32:21.267] [info] [api.cc:193] - arshift_p, executed 46 times, duration 0.000216616s, send bytes 0
+[2023-10-04 11:32:21.267] [info] [api.cc:193] - b2a, executed 278 times, duration 2.537665968s, send bytes 12784032
+[2023-10-04 11:32:21.267] [info] [api.cc:193] - bitrev_b, executed 62 times, duration 0.057978435s, send bytes 0
+[2023-10-04 11:32:21.267] [info] [api.cc:193] - equal_pp, executed 61 times, duration 0.000335168s, send bytes 0
+[2023-10-04 11:32:21.267] [info] [api.cc:193] - lshift_b, executed 150 times, duration 0.000634273s, send bytes 0
+[2023-10-04 11:32:21.267] [info] [api.cc:193] - lshift_p, executed 92 times, duration 0.000369272s, send bytes 0
+[2023-10-04 11:32:21.267] [info] [api.cc:193] - make_p, executed 131246 times, duration 0.110452657s, send bytes 0
+[2023-10-04 11:32:21.267] [info] [api.cc:193] - mmul_aa, executed 146 times, duration 3.683604071s, send bytes 99618336
+[2023-10-04 11:32:21.267] [info] [api.cc:193] - mmul_ap, executed 11 times, duration 0.000211076s, send bytes 0
+[2023-10-04 11:32:21.267] [info] [api.cc:193] - msb_a2b, executed 179 times, duration 2.117823167s, send bytes 44885848
+[2023-10-04 11:32:21.267] [info] [api.cc:193] - msb_p, executed 48810 times, duration 0.057708322s, send bytes 0
+[2023-10-04 11:32:21.267] [info] [api.cc:193] - mul_aa, executed 764 times, duration 2.707401188s, send bytes 176544448
+[2023-10-04 11:32:21.267] [info] [api.cc:193] - mul_ap, executed 7343 times, duration 0.049919688s, send bytes 0
+[2023-10-04 11:32:21.267] [info] [api.cc:193] - mul_pp, executed 9568 times, duration 0.015498925s, send bytes 0
+[2023-10-04 11:32:21.267] [info] [api.cc:193] - not_a, executed 7590 times, duration 0.420728206s, send bytes 0
+[2023-10-04 11:32:21.267] [info] [api.cc:193] - not_p, executed 90502 times, duration 0.130249832s, send bytes 0
+[2023-10-04 11:32:21.267] [info] [api.cc:193] - p2a, executed 2 times, duration 4.4308e-05s, send bytes 0
+[2023-10-04 11:32:21.267] [info] [api.cc:193] - rshift_b, executed 534 times, duration 0.01950274s, send bytes 0
+[2023-10-04 11:32:21.267] [info] [api.cc:193] - trunc_a, executed 834 times, duration 3.325602014s, send bytes 141747160
+[2023-10-04 11:32:21.267] [info] [api.cc:193] - xor_bb, executed 881 times, duration 0.052637876s, send bytes 0
+[2023-10-04 11:32:21.267] [info] [api.cc:193] - xor_bp, executed 37 times, duration 0.003985687s, send bytes 0
+[2023-10-04 11:32:21.267] [info] [api.cc:203] Link details: total send bytes 592728632, send actions 3756
+[2023-10-04 11:32:21,272] [MainProcess] RunR: builtin_fetch_meta at node:0
+[2023-10-04 11:32:21,276] [MainProcess] RunR: builtin_gc at node:0
+[2023-10-04 11:32:21,281] [MainProcess] RunR: builtin_gc at node:0
+[2023-10-04 11:32:21,286] [MainProcess] RunR: builtin_gc at node:0
+[2023-10-04 11:32:21,290] [MainProcess] RunR: builtin_gc at node:0
+[2023-10-04 11:32:21,295] [MainProcess] RunR: builtin_gc at node:0
+[2023-10-04 11:32:21,299] [MainProcess] RunR: builtin_gc at node:0
+[2023-10-04 11:32:21,303] [MainProcess] RunR: builtin_gc at node:0
+[2023-10-04 11:32:21,307] [MainProcess] RunR: builtin_gc at node:0
+[2023-10-04 11:32:21,310] [MainProcess] RunR: builtin_fetch_object at node:0
+[2023-10-04 11:32:21,319] [MainProcess] RunR: builtin_gc at node:0
+[2023-10-04 11:32:21,324] [MainProcess] RunR: builtin_gc at node:0
+[2023-10-04 11:32:21,328] [MainProcess] RunR: builtin_gc at node:0
+[2023-10-04 11:32:21,332] [MainProcess] RunR: builtin_gc at node:0
+[2023-10-04 11:33:57,480] [MainProcess] Run : builtin_spu_init at node:0
+[2023-10-04 11:33:57,491] [MainProcess] spu-runtime (SPU) already exist, reuse it
+[2023-10-04 11:34:43,526] [MainProcess] Run : builtin_spu_init at node:0
+[2023-10-04 11:34:43,540] [MainProcess] spu-runtime (SPU) already exist, reuse it
+[2023-10-04 11:35:51,152] [MainProcess] Run : builtin_spu_init at node:0
+[2023-10-04 11:35:51,153] [MainProcess] spu-runtime (SPU) already exist, reuse it
+[2023-10-04 11:36:00,829] [MainProcess] Run : <lambda> at node:0
+[2023-10-04 11:36:00,968] [MainProcess] Run : make_shares at node:0
+[2023-10-04 11:36:00,974] [MainProcess] RunR: builtin_fetch_meta at node:0
+[2023-10-04 11:36:03,106] [MainProcess] Run : builtin_spu_run at node:0
+[2023-10-04 11:36:03,113] [MainProcess] RunR: builtin_fetch_object at node:0
+[2023-10-04 11:36:14.954] [info] [api.cc:157] [Profiling] SPU execution infer_cipher completed, input processing took 7.1561e-05s, execution took 11.402994864s, output processing took 6.644e-06s, total time 11.403073069s.
+[2023-10-04 11:36:14.955] [info] [api.cc:190] HLO profiling: total time 11.381362976999997
+[2023-10-04 11:36:14.955] [info] [api.cc:193] - pphlo.add, executed 206 times, duration 0.088616674s, send bytes 0
+[2023-10-04 11:36:14.955] [info] [api.cc:193] - pphlo.and, executed 15 times, duration 6.9024e-05s, send bytes 0
+[2023-10-04 11:36:14.955] [info] [api.cc:193] - pphlo.broadcast, executed 89 times, duration 0.000574055s, send bytes 0
+[2023-10-04 11:36:14.955] [info] [api.cc:193] - pphlo.clamp, executed 14 times, duration 2.192612896s, send bytes 74547200
+[2023-10-04 11:36:14.955] [info] [api.cc:193] - pphlo.concatenate, executed 28 times, duration 0.005177903s, send bytes 0
+[2023-10-04 11:36:14.955] [info] [api.cc:193] - pphlo.constant, executed 74 times, duration 0.000183609s, send bytes 0
+[2023-10-04 11:36:14.955] [info] [api.cc:193] - pphlo.convert, executed 1 times, duration 3.5271e-05s, send bytes 0
+[2023-10-04 11:36:14.955] [info] [api.cc:193] - pphlo.convolution, executed 1 times, duration 0.009178016s, send bytes 253952
+[2023-10-04 11:36:14.955] [info] [api.cc:193] - pphlo.divide, executed 13 times, duration 5.230685399s, send bytes 182856960
+[2023-10-04 11:36:14.955] [info] [api.cc:193] - pphlo.dot, executed 43 times, duration 0.952121233s, send bytes 42613536
+[2023-10-04 11:36:14.955] [info] [api.cc:193] - pphlo.dot_general, executed 14 times, duration 0.19931344s, send bytes 5620160
+[2023-10-04 11:36:14.955] [info] [api.cc:193] - pphlo.dynamic-slice, executed 1 times, duration 3.6205e-05s, send bytes 0
+[2023-10-04 11:36:14.955] [info] [api.cc:193] - pphlo.dynamic-update-slice, executed 1 times, duration 0.000193009s, send bytes 0
+[2023-10-04 11:36:14.955] [info] [api.cc:193] - pphlo.equal, executed 7 times, duration 6.3614e-05s, send bytes 0
+[2023-10-04 11:36:14.955] [info] [api.cc:193] - pphlo.free, executed 1257 times, duration 0.001146744s, send bytes 0
+[2023-10-04 11:36:14.955] [info] [api.cc:193] - pphlo.gather, executed 13 times, duration 0.187368493s, send bytes 0
+[2023-10-04 11:36:14.955] [info] [api.cc:193] - pphlo.greater, executed 22 times, duration 0.24266399s, send bytes 4786600
+[2023-10-04 11:36:14.955] [info] [api.cc:193] - pphlo.less, executed 22 times, duration 0.000333669s, send bytes 0
+[2023-10-04 11:36:14.955] [info] [api.cc:193] - pphlo.multiply, executed 194 times, duration 1.897449735s, send bytes 90061400
+[2023-10-04 11:36:14.955] [info] [api.cc:193] - pphlo.negate, executed 14 times, duration 0.00012787s, send bytes 0
+[2023-10-04 11:36:14.955] [info] [api.cc:193] - pphlo.not, executed 9 times, duration 0.000111163s, send bytes 0
+[2023-10-04 11:36:14.955] [info] [api.cc:193] - pphlo.pad, executed 30 times, duration 8.793e-05s, send bytes 0
+[2023-10-04 11:36:14.955] [info] [api.cc:193] - pphlo.prefer_a, executed 7 times, duration 8.6837e-05s, send bytes 0
+[2023-10-04 11:36:14.956] [info] [api.cc:193] - pphlo.reduce, executed 22 times, duration 0.109323586s, send bytes 0
+[2023-10-04 11:36:14.956] [info] [api.cc:193] - pphlo.reshape, executed 215 times, duration 0.000951455s, send bytes 0
+[2023-10-04 11:36:14.956] [info] [api.cc:193] - pphlo.rsqrt, executed 15 times, duration 0.109746408s, send bytes 452400
+[2023-10-04 11:36:14.956] [info] [api.cc:193] - pphlo.select, executed 50 times, duration 0.060019057s, send bytes 2051400
+[2023-10-04 11:36:14.956] [info] [api.cc:193] - pphlo.slice, executed 93 times, duration 0.00029834s, send bytes 0
+[2023-10-04 11:36:14.956] [info] [api.cc:193] - pphlo.subtract, executed 30 times, duration 0.02945838s, send bytes 0
+[2023-10-04 11:36:14.956] [info] [api.cc:193] - pphlo.transpose, executed 36 times, duration 0.004460061s, send bytes 0
+[2023-10-04 11:36:14.956] [info] [api.cc:193] - pphlo.while, executed 19 times, duration 0.058868911s, send bytes 0
+[2023-10-04 11:36:14.956] [info] [api.cc:190] HAL profiling: total time 11.141615367999998
+[2023-10-04 11:36:14.956] [info] [api.cc:193] - _and, executed 378 times, duration 0.001473954s, send bytes 0
+[2023-10-04 11:36:14.956] [info] [api.cc:193] - _mul, executed 14 times, duration 0.004863746s, send bytes 0
+[2023-10-04 11:36:14.956] [info] [api.cc:193] - _mux, executed 189 times, duration 0.40528043s, send bytes 24415560
+[2023-10-04 11:36:14.956] [info] [api.cc:193] - _trunc, executed 14 times, duration 0.137953214s, send bytes 3727360
+[2023-10-04 11:36:14.956] [info] [api.cc:193] - f_add, executed 313 times, duration 0.193903528s, send bytes 0
+[2023-10-04 11:36:14.956] [info] [api.cc:193] - f_div, executed 13 times, duration 5.230534464s, send bytes 182856960
+[2023-10-04 11:36:14.956] [info] [api.cc:193] - f_less, executed 49 times, duration 2.11329254s, send bytes 56969640
+[2023-10-04 11:36:14.956] [info] [api.cc:193] - f_mmul, executed 99 times, duration 1.147362609s, send bytes 48233696
+[2023-10-04 11:36:14.956] [info] [api.cc:193] - f_mul, executed 180 times, duration 1.75030422s, send bytes 86334040
+[2023-10-04 11:36:14.956] [info] [api.cc:193] - f_rsqrt, executed 15 times, duration 0.109651706s, send bytes 452400
+[2023-10-04 11:36:14.956] [info] [api.cc:193] - f_sub, executed 30 times, duration 0.029304963s, send bytes 0
+[2023-10-04 11:36:14.956] [info] [api.cc:193] - f_tensordot, executed 1 times, duration 0.008927138s, send bytes 253952
+[2023-10-04 11:36:14.956] [info] [api.cc:193] - i_add, executed 201 times, duration 0.000617974s, send bytes 0
+[2023-10-04 11:36:14.956] [info] [api.cc:193] - i_equal, executed 7 times, duration 4.1686e-05s, send bytes 0
+[2023-10-04 11:36:14.956] [info] [api.cc:193] - i_less, executed 375 times, duration 0.005334799s, send bytes 0
+[2023-10-04 11:36:14.956] [info] [api.cc:193] - i_negate, executed 14 times, duration 0.000102358s, send bytes 0
+[2023-10-04 11:36:14.956] [info] [api.cc:193] - logical_not, executed 231 times, duration 0.002638396s, send bytes 0
+[2023-10-04 11:36:14.956] [info] [api.cc:193] - seal, executed 1 times, duration 2.7643e-05s, send bytes 0
+[2023-10-04 11:36:14.956] [info] [api.cc:190] MPC profiling: total time 11.109552261999998
+[2023-10-04 11:36:14.956] [info] [api.cc:193] - a2b, executed 28 times, duration 1.054951327s, send bytes 66234480
+[2023-10-04 11:36:14.956] [info] [api.cc:193] - add_aa, executed 524 times, duration 0.200418509s, send bytes 0
+[2023-10-04 11:36:14.956] [info] [api.cc:193] - add_ap, executed 553 times, duration 0.090462182s, send bytes 0
+[2023-10-04 11:36:14.956] [info] [api.cc:193] - add_pp, executed 1688 times, duration 0.018582777s, send bytes 0
+[2023-10-04 11:36:14.956] [info] [api.cc:193] - and_bb, executed 168 times, duration 0.412780309s, send bytes 28022280
+[2023-10-04 11:36:14.956] [info] [api.cc:193] - and_bp, executed 270 times, duration 0.000764211s, send bytes 0
+[2023-10-04 11:36:14.956] [info] [api.cc:193] - and_pp, executed 378 times, duration 0.001074537s, send bytes 0
+[2023-10-04 11:36:14.956] [info] [api.cc:193] - b2a, executed 133 times, duration 1.755085468s, send bytes 15780960
+[2023-10-04 11:36:14.956] [info] [api.cc:193] - bitrev_b, executed 43 times, duration 0.045840038s, send bytes 0
+[2023-10-04 11:36:14.956] [info] [api.cc:193] - equal_pp, executed 7 times, duration 2.5864e-05s, send bytes 0
+[2023-10-04 11:36:14.956] [info] [api.cc:193] - lshift_b, executed 90 times, duration 0.000211795s, send bytes 0
+[2023-10-04 11:36:14.956] [info] [api.cc:193] - make_p, executed 1533 times, duration 0.003100667s, send bytes 0
+[2023-10-04 11:36:14.956] [info] [api.cc:193] - mmul_aa, executed 100 times, duration 0.973851873s, send bytes 39954656
+[2023-10-04 11:36:14.956] [info] [api.cc:193] - msb_a2b, executed 62 times, duration 2.772705625s, send bytes 74747400
+[2023-10-04 11:36:14.956] [info] [api.cc:193] - msb_p, executed 375 times, duration 0.000499658s, send bytes 0
+[2023-10-04 11:36:14.956] [info] [api.cc:193] - mul_aa, executed 393 times, duration 1.989332145s, send bytes 115082240
+[2023-10-04 11:36:14.956] [info] [api.cc:193] - mul_ap, executed 229 times, duration 0.020871639s, send bytes 0
+[2023-10-04 11:36:14.956] [info] [api.cc:193] - mul_pp, executed 56 times, duration 9.9977e-05s, send bytes 0
+[2023-10-04 11:36:14.956] [info] [api.cc:193] - not_a, executed 227 times, duration 0.10666891s, send bytes 0
+[2023-10-04 11:36:14.956] [info] [api.cc:193] - not_p, executed 754 times, duration 0.01143534s, send bytes 0
+[2023-10-04 11:36:14.956] [info] [api.cc:193] - p2a, executed 1 times, duration 2.1035e-05s, send bytes 0
+[2023-10-04 11:36:14.956] [info] [api.cc:193] - rshift_b, executed 361 times, duration 0.013957656s, send bytes 0
+[2023-10-04 11:36:14.956] [info] [api.cc:193] - trunc_a, executed 475 times, duration 1.594127195s, send bytes 63421592
+[2023-10-04 11:36:14.956] [info] [api.cc:193] - xor_bb, executed 604 times, duration 0.039531936s, send bytes 0
+[2023-10-04 11:36:14.956] [info] [api.cc:193] - xor_bp, executed 28 times, duration 0.003151589s, send bytes 0
+[2023-10-04 11:36:14.956] [info] [api.cc:203] Link details: total send bytes 403243608, send actions 1899
+[2023-10-04 11:36:14,960] [MainProcess] RunR: builtin_fetch_meta at node:0
+[2023-10-04 11:36:14,995] [MainProcess] RunR: builtin_gc at node:0
+[2023-10-04 11:36:15,001] [MainProcess] RunR: builtin_gc at node:0
+[2023-10-04 11:36:15,006] [MainProcess] RunR: builtin_gc at node:0
+[2023-10-04 11:36:15,011] [MainProcess] RunR: builtin_gc at node:0
+[2023-10-04 11:36:15,015] [MainProcess] RunR: builtin_fetch_object at node:0
+[2023-10-04 11:36:15,036] [MainProcess] RunR: builtin_gc at node:0
+[2023-10-04 11:36:15,041] [MainProcess] RunR: builtin_gc at node:0
