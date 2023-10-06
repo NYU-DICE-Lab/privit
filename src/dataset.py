@@ -8,7 +8,7 @@ def get_dataset(dataset: str, split, augment,resize=224, dpath: str = None ):
         _IMAGENET_MEAN = [0.485, 0.456, 0.406]
         _IMAGENET_STDDEV = [0.229, 0.224, 0.225]
         if split == "train":
-            subdir = os.path.join("/data/datasets/ImageNet", "train")
+            subdir = os.path.join("path/to/imagenet/", "train")
             transform = transforms.Compose([
             transforms.ColorJitter(brightness=0.2, contrast=0.2, saturation=0.2, hue=0.1),
             transforms.RandomResizedCrop(224),
@@ -20,7 +20,7 @@ def get_dataset(dataset: str, split, augment,resize=224, dpath: str = None ):
             if augment:
                 transform.transforms.insert(0, RandAugment(2, 9))
         elif split == "test":
-            subdir = os.path.join("/data/datasets/ImageNet/val", "val")
+            subdir = os.path.join("/path/to/imagenet/", "val")
             transform = transforms.Compose([
                 transforms.Resize(256),
                 transforms.CenterCrop(224),
@@ -31,7 +31,7 @@ def get_dataset(dataset: str, split, augment,resize=224, dpath: str = None ):
 
     elif dataset == "tiny_imagenet":
         if dpath == None:
-            dpath = "/scratch/nhd7682/tiny-imagenet-200/"
+            dpath = "path/to/tinyimagenet/"
         _TINY_MEAN = [0.480, 0.448, 0.398]
         _TINY_STD = [0.277, 0.269, 0.282]   
         if split == "train":
@@ -70,9 +70,9 @@ def get_dataset(dataset: str, split, augment,resize=224, dpath: str = None ):
                 ])
             if augment:
                 transform.transforms.insert(0, RandAugment(2, 9))
-            return datasets.CIFAR10("/scratch/nhd7682/dataset_cache", train=True, download=True, transform=transform)
+            return datasets.CIFAR10("/", train=True, download=True, transform=transform)
         elif split == "test" and dataset == "cifar10":
-            return datasets.CIFAR10("/scratch/nhd7682/dataset_cache", train=False, download=True, transform=transforms.Compose([
+            return datasets.CIFAR10("/", train=False, download=True, transform=transforms.Compose([
                 transforms.Resize(resize),
                 transforms.ToTensor(),
                 transforms.Normalize(_CIFAR_MEAN, _CIFAR_STDDEV)
@@ -88,9 +88,9 @@ def get_dataset(dataset: str, split, augment,resize=224, dpath: str = None ):
                 ])
             if augment:
                 transform.transforms.insert(0, RandAugment(2, 9))
-            return datasets.CIFAR100("/scratch/nhd7682/dataset_cache", train=True, download=True, transform=transform)
+            return datasets.CIFAR100("/", train=True, download=True, transform=transform)
         elif split == "test" and dataset == "cifar100":
-            return datasets.CIFAR100("/scratch/nhd7682/dataset_cache", train=False, download=True, transform=transforms.Compose([
+            return datasets.CIFAR100("/", train=False, download=True, transform=transforms.Compose([
                 transforms.Resize(resize),
                 transforms.ToTensor(),
                 transforms.Normalize((0.5071, 0.4867, 0.4408), (0.2675, 0.2565, 0.2761))
