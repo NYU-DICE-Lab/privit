@@ -30,15 +30,17 @@ conda env create -n compression --file privit_training_environmnet.yml
 
 ## Training
 ### Primary Training Scripts
-You can find the training script in the scripts folder, primary training logic is in train.py.
-- train.py: Use this script to train the model using our proposed method, PRIVIT
+You can find the training script in the slurm script files. Ensure that correct datapath is updated in the dataset.py folder.
+- tinyimagenet.sbatch: This is the slurm script to train privit model on Tiny Imagenet dataset
+- cifar100.sbatch: This is the slurm script to train privit model on Cifar 100 dataset.
+- cifar10.sbatch: This is the slurm script to train privit model on Cifar 10 dataset.
+- train.py: This script has the primary training logic of PriViT
 
 We have also released model checkpoints [here](https://drive.google.com/drive/folders/16cn2JwPNSwy5j-FWm9tdwoZzYmc7SDyG?usp=sharing).
 
 
 ## Inference
-You can find the inference script in the scripts folder, primary inference logic is in inference.py.
-- inference.py: Run this script to perform inference using a trained model.
+You can find the inference script in inference.sbatch file, primary inference logic is in inference.py.
 
 ## Benchmarking
 The folder benchmark/ contains all flax code used for benchmarking the performance of these PyTorch models using secretflow framework on SEMI2k protocol. For detailed instructions on how to setup a benchmarking setup using secretflow, refer their [documentation](https://github.com/secretflow/spu/tree/atc23_ae#usenix-atc-23-artifact-evaluation).
@@ -46,10 +48,12 @@ The folder benchmark/ contains all flax code used for benchmarking the performan
 Start the server on two nodes using this:
 ### Server 1
 ```sh
+conda activate spu-jax
 python nodectl.py -c 2pc.json start --node_id node:0 &> node0.log &
 ```
 ### Server 2
 ```sh
+conda activate spu-jax
 python nodectl.py -c 2pc.json start --node_id node:1 &> node1.log &
 ```
 
