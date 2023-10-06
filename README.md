@@ -21,7 +21,7 @@ You would need to create two separate environments one for training privit model
 We have exported the environment so you can simply create one by loading the yml files provided in the src. privit_training_environmnet.yml has packages for training environment and spu-jax.yml has packages for the benchmarking environment.
 
 ```sh
-git clone [repository]
+git clone privit
 cd privit
 cd src
 conda env create -n compression --file privit_training_environmnet.yml
