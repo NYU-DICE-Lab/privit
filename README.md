@@ -74,3 +74,12 @@ Ablation studies are performed using this script
 
 ## Citation
 If you find our work helpful to your research, please cite our paper:
+
+> @misc{dhyani2023privit,  
+>    title={PriViT: Vision Transformers for Fast Private Inference},  
+>    author={Naren Dhyani and Jianqiao Mo and Minsu Cho and Ameya Joshi and Siddharth Garg and Brandon Reagen and Chinmay Hegde},  
+>    year={2023},  
+>    eprint={2310.04604},  
+>    archivePrefix={arXiv},  
+>    primaryClass={cs.CR}  
+>}
