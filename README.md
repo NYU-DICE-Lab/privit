@@ -1,6 +1,6 @@
 # PriViT: Vision Transformers for Fast Private Inference
 
-This repository contains the code of our paper PriViT (arxiv link). Here we provide all the necessary files and instructions to replicate our training, testing, and benchmarking processes.
+This repository contains the code for our paper PriViT (arxiv link). Here we provide all the necessary files and instructions to replicate our training, testing, and benchmarking processes.
 
 ## Table of Contents
 - [Getting Started](#getting-started)
